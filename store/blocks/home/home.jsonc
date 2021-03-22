@@ -15,7 +15,15 @@
       "newsletter",
       "flex-layout.row#deals",
       "hello-world"
-    ]
+    ],
+    "parent": {
+      "challenge": "challenge.trade-policy-condition"
+    }
+  },
+  "challenge.trade-policy-condition": {
+    "props": {
+      "redirectPath": "/login"
+    }
   },
   "flex-layout.row#form": {
     "children": [
