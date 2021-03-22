@@ -1,0 +1,211 @@
+.notificationBarContainer {
+  background-color: #f5e9e9;
+  color: #03034e;
+  font-weight: 700;
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+.infoCardContainer--info-card-home {
+  max-width: 1520px;
+  margin: 0 auto;
+  background-color: #e6f1e6;
+  padding: 0px;
+}
+
+.newsletter {
+  background-color: #000000;
+  max-width: 950px;
+  margin: 30px auto;
+}
+
+.newsletter .container {
+  padding: 40px 10px;
+}
+
+.label {
+  color: #fff;
+  font-size: 26px;
+}
+
+.inputGroup {
+  padding-bottom: 4px;
+  padding-top: 4px;
+  display: flex;
+  color: #fff;
+}
+
+.inputGroup :global(.vtex-styleguide-9-x-hideDecorators) {
+  background-color: white;
+  color: black;
+  border-radius: revert;
+}
+
+.inputGroup :global(.vtex-styleguide-9-x-hideDecorators)::placeholder {
+  color: rgba(0, 0, 0, 0.493);
+  font-size: 12px;
+  font-family: 'Share Tech',sans-serif;
+  font-style: italic;
+}
+
+.inputGroup :global(.vtex-input-prefix__group){
+  border: none;
+  border-radius: 0px;
+}
+
+.inputGroup :global(.vtex-button) {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  margin-right: -24px;
+}
+
+.buttonContainer {
+  padding-top: 0px;
+}
+
+.imageElement--storePrint {
+  max-height: 300px;
+  margin-bottom: 20px;
+}
+
+.skuSelectorContainer {
+  margin: 1rem 0;
+}
+
+@media only screen and (min-width: 640px) {
+  .newsletter .container .inputGroup{
+    grid-column: 2/3;
+  }
+
+  .newsletter .container .label{
+    font-size: 1rem;
+    grid-column: 1/2;
+    align-self: center;
+    font-family: 'Share Tech',sans-serif;
+    font-weight: 100;
+    text-align: left;
+  }
+  .newsletter .container .form{
+    /* padding: 140px; */
+    margin-right: 0;
+    margin-left: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 100%;
+    padding: 0 3rem;
+  }
+
+ .label {
+    font-size: 40px;
+  }
+  .newsletter .container .label::before {
+    content: 'NEWSLETTER';
+    color: white;
+    font-size: 1.2rem;
+    display: block;
+  }
+
+  .infoCardContainer--info-card-home .infoCardTextContainer {
+    width: 30%;
+  }
+
+  .infoCardContainer--info-card-home .infoCardImageContainer {
+    width: 70%;
+  }
+
+  .imageElement--storePrint {
+    margin-bottom: 0px;
+    max-height: 600px;
+  }
+}
+
+.productImagesContainer--quickview .carouselContainer {
+  justify-content: flex-start;
+}
+
+.productImagesContainer--quickview .productImageTag {
+  object-fit: cover !important;
+}
+
+.productImagesContainer--quickview .carouselGaleryThumbs {
+  display: none;
+}
+
+.productImagesContainer--quickview .carouselGaleryCursor {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.productNameContainer {
+  color: black;
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: 'Share Tech', sans-serif;
+}
+
+.autoCompleteOuterContainer{
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+.container{
+  max-width: 1920px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+/* estilo producto */
+.container
+:global(.vtex-breadcrumb-1-x-container)
+:global(.vtex-breadcrumb-1-x-link){
+  color: black;
+  font-family: 'Share Tech', sans-serif;
+  font-size: .6rem;
+  font-weight: bold;
+  margin-left: -12px;
+  text-transform: capitalize;
+}
+.container
+:global(.vtex-breadcrumb-1-x-container)
+:global(.vtex-breadcrumb-1-x-link)::after{
+  content: '/';
+  margin-left: 4px;
+}
+.container
+:global(.vtex-breadcrumb-1-x-container)
+:global(.vtex-breadcrumb-1-x-term),
+.container
+:global(.vtex-breadcrumb-1-x-container)
+:global(.vtex-breadcrumb-1-x-homeLink),
+.container
+:global(.vtex-breadcrumb-1-x-container)
+:global(.vtex-breadcrumb-1-x-caretIcon){
+  display: none;
+}
+
+/* descripción producto */
+.productDescriptionContainer{
+  width: 70%;
+  margin: 0 auto;
+}
+.productDescriptionContainer .productDescriptionTitle{
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Share Tech', sans-serif;
+  font-weight: bold;
+}
+.productDescriptionContainer .productDescriptionText{
+  background: #F2F2F2;
+  padding: 30px 50px;
+  width: 70%;
+  margin: 0 auto;
+  font-size: .8rem;
+  font-family: 'PT Sans', sans-serif;
+  color: black;
+}
+

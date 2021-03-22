@@ -1,0 +1,75 @@
+.skuSelectorContainer--quickview .skuSelectorItemImage .frameAround, .skuSelectorContainer--quickview .skuSelectorItemImage .skuSelectorInternalBox {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.container :global(.vtex-modal-layout-0-x-triggerContainer) {
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+}
+
+.container:hover :global(.vtex-modal-layout-0-x-triggerContainer) {
+  opacity: 1;
+}
+
+@media screen and (max-width: 40em) {
+  .container :global(.vtex-modal-layout-0-x-triggerContainer) {
+    display: none;
+  }
+}
+
+.nameContainer {
+  justify-content: center;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
+.brandName {
+  font-weight: 600;
+  font-size: .95rem;
+  color: #2E2E2E;
+  font-family: 'Share Tech', sans-serif;
+  text-transform: uppercase;
+}
+
+.container {
+  text-align: start;
+}
+
+.imageContainer {
+  text-align: center;
+}
+
+.image {
+  border-radius: 0.25rem;
+}
+
+:global(.vtex-product-summary-2-x-container)
+:global(.vtex-slider-layout-0-x-slide--visible){
+  border: 1px solid #C6C6C5;
+}
+
+:global(.vtex-product-summary-2-x-container)
+:global(.vtex-flex-layout-0-x-flexColChild){
+  display: none;
+}
+
+:global(.vtex-slider-layout-0-x-sliderLayoutContainer--shelf)
+:global(.vtex-product-summary-2-x-container)
+:global(.vtex-button){
+  background: #868686;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 12px;
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+}
+
+:global(.vtex-slider-layout-0-x-sliderLayoutContainer--shelf)
+:global(.vtex-product-summary-2-x-container)
+:global(.vtex-button):hover{
+  background: #F75454;
+}
